@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: var(--font-overpass-mono);
+  font-weight: 500;
+}
+
+.main-container {
+  @apply lg:w-3/5 min-h-full p-5;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-gallery-content:not(.fullscreen)
+.image-gallery-slide
+.image-gallery-image {
+  max-height: 400px !important;
+  width: 100vw;
+}
+
+.image-gallery-content
+.image-gallery-slide
+.image-gallery-image {
+  width: 100vw;
+}
